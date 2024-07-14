@@ -40,4 +40,8 @@ data do evento, preço, flag promocional e a quantidade do estoque.
 
 -   Escolhi o item 1021 para criar previsões e criar um gráfico.
 -   Em azul está os resultados passados, em rosa está o pior caso previsto, em verde está uma previsão neutra e em amarelo o melhor caso previsto.
--   Um exemplo de insight neste caso é que podemos ter certeza que no dia 2024-02-09 o valor será o mesmo idependente da pior ou melhor previsão.
+-   Um exemplo de insight neste caso é que podemos ter certeza que no dia 2024-02-10 o valor será o mesmo idependente da pior ou melhor previsão.
+
+### 5. Conclusão
+
+Este projeto mostra um método fácil e rápido de ensinar um Machine Learning (ML) com um método no-code e criar previsões e insights de maneiras diferentes baseado no dataset apresentado.
