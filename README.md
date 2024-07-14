@@ -16,22 +16,28 @@ data do evento, preço, flag promocional e a quantidade do estoque.
 
 ### 2. Construir/Treinar
 
+![image](https://github.com/user-attachments/assets/03f0584e-cf27-4a3f-b930-9a8a9dee4376)
+
 -   Ao importar o dataset, configurei a coluna de preços como alvo de previsão.
 -   Em seguida configurei as outras variáveis de entrada e escolhi o modelo de previsão.
 -   Escolhi o Standard build que é o método mais demorado de treino para previsões mais precisas.
 
 ### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+![image](https://github.com/user-attachments/assets/e1d673f9-bf03-4220-9c7b-fe5ddeae8aa7)
+
+-   Avg. wQL calcula a diferença entre os valores previstos e os valores reais.
+-   MAPE calcula a porcentagem de erros de todos os pontos de tempo.
+-   WAPE semelhante ao MAPE, mas os erros são ponderados de acordo com a importância ou frequência de cada informação.
+-   RMSE é a raiz quadrada da média dos quadrados das diferenças entre os valores previstos e os valores reais. O RMSE é sensível a grandes erros, o que pode ser útil se erros grandes forem particularmente indesejáveis no seu contexto.
+-   MASE compara o erro absoluto médio do seu modelo com o erro absoluto médio de um modelo de benchmark simples (como a média histórica ou a previsão de um passo anterior).
+-   Todas essas métricas significam que quanto mais perto de zero, mais precisa é a previsão.
+-   Abaixo verificamos as principais caracteristicas que influenciaram a previsão. A FLAG_PROMOCAO e a principal sendo a QUANTIDADE_ESTOQUE.
 
 ### 4. Prever
 
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+![image](https://github.com/user-attachments/assets/45c790d2-cd76-4928-bdea-26257eebad3a)
 
-## 🤔 Dúvidas?
-
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+-   Escolhi o item 1021 para criar previsões e criar um gráfico.
+-   Em azul está os resultados passados, em rosa está o pior caso previsto, em verde está uma previsão neutra e em amarelo o melhor caso previsto.
+-   Um exemplo de insight neste caso é que podemos ter certeza que no dia 2024-02-09 o valor será o mesmo idependente da pior ou melhor previsão.
